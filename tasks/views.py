@@ -6,8 +6,6 @@ from django.http import HttpResponse
 def manager_dashboard(request):
     return render(request, "dashboard/manager-dashboard.html")
 
-<<<<<<< HEAD
-
 def user_dashboard(request):
     return render(request, "dashboard/user-dashboard.html")
 
@@ -17,12 +15,41 @@ def test(request):
         "age": 23
     }
     return render(request, 'test.html', context)
-=======
-def show_task(request):
-    return HttpResponse("This is our task page")
 
-def show_specific_task(request,id):
-    print("id",id)
-    print("id type", type(id))
-    return HttpResponse("This is specific task page{id}")
->>>>>>> dynamic_urls
+
+# def create_task(request):
+#     form = TaskForm(employees = {"name":"John", "id": 1})
+#     context = {"form": form}
+#     return render(request, "task_form.html", context)
+
+
+
+
+# from django.shortcuts import render
+# from tasks.forms import TaskForm
+# # from django.http import HttpResponse
+
+# # Create your views here.
+
+# # def home(request):
+# #     return HttpResponse("Welcome to the task management system")
+
+# def manager_dashboard(request):
+#     return render(request, "dashboard/manager-dashboard.html")
+
+
+# def user_dashboard(request):
+#     return render(request, "dashboard/user-dashboard.html")
+
+# def test(request):
+#     context = {                 #  declaring a dictionary
+#         "names" : ['Sam', 'Tiara', 'John'],
+#         "age" : 23
+#     }
+#     return render(request, "test.html", context)
+
+
+# def create_task(request):
+#     form = TaskForm(employees = {"name":"John", "id": 1})
+#     context = {"form": form}
+#     return render(request, "task_form.html", context)
